@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Global font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 .header {
@@ -31,7 +31,6 @@ body {
     z-index: 1; /* Ensure text appears above the pseudo-element */
 }
 
-
 h1 {
     font-size: 2em; /* Increase the main heading font size */
 }
@@ -40,15 +39,37 @@ h2 {
     font-size: 2em; /* Increase subheading font size */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+nav {
+    background-color: #333; /* Background color for the nav */
+    padding: 10px 20px; /* Padding around the nav */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul {
+    list-style-type: none; /* Remove bullets from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Align items in a row */
 }
+
+nav li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+nav li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+nav a {
+    color: white; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Arial', sans-serif; /* Keep the font family consistent */
+    font-size: 1em; /* Font size for menu items */
+}
+
+nav a:hover {
+    color: #ff9800; /* Change color on hover */
+}
+
 .services-container {
     display: flex; /* Use flexbox to align items side by side */
     align-items: flex-start; /* Align items at the start (top) */
@@ -65,15 +86,16 @@ nav ul li {
 }
 
 .services-image img {
-    max-width: 50%; /* Ensure the image is responsive */
+    max-width: 50%; /* Set max width for the image to be smaller */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Other existing styles remain unchanged */
 p {
-    font-family: 'Arial', sans-serif; /* Change to your preferred font family */
+    font-family: 'Arial', sans-serif; /* Ensure paragraph uses the same font family */
     font-size: 1.2em; /* Adjust font size as needed */
     font-weight: bold; /* Change to 'normal' or 'light' if you want a different weight */
     color: black; /* Set the text color */
     line-height: 1.5; /* Adjust line height for better readability */
 }
+
+/* Additional media queries for responsiveness can be added if needed */
