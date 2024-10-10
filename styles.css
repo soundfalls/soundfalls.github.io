@@ -5,20 +5,39 @@ body {
 }
 
 .header {
-    background-image: url('header-background.jpg');
-    background-size: cover;
+    position: relative; /* Set position relative to use absolute positioning for the pseudo-element */
     color: black; /* Change text color to black */
     text-align: center;
-    padding: 100px 20px; /* Adjust padding as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
     font-size: 2em; /* Increase font size in the header */
+    overflow: hidden; /* Prevent overflow of the pseudo-element */
 }
 
+.header::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely within the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('header-background.jpg'); /* Set the same background image */
+    background-size: cover; /* Cover the entire area */
+    opacity: 0.5; /* Change this value for desired opacity (0 is fully transparent, 1 is fully opaque) */
+    z-index: 0; /* Set z-index lower than the text */
+}
+
+.header > * {
+    position: relative; /* Position text above the background */
+    z-index: 1; /* Ensure text appears above the pseudo-element */
+}
+
+
 h1 {
-    font-size: 3em; /* Increase the main heading font size */
+    font-size: 2em; /* Increase the main heading font size */
 }
 
 h2 {
-    font-size: 2.5em; /* Increase subheading font size */
+    font-size: 2em; /* Increase subheading font size */
 }
 
 nav ul {
@@ -30,5 +49,31 @@ nav ul li {
     display: inline;
     margin: 0 15px;
 }
+.services-container {
+    display: flex; /* Use flexbox to align items side by side */
+    align-items: flex-start; /* Align items at the start (top) */
+}
+
+.services-section {
+    flex: 1; /* Allow the services section to take available space */
+    padding: 20px; /* Add some padding around the services section */
+}
+
+.services-image {
+    flex-shrink: 0; /* Prevent the image section from shrinking */
+    margin-left: 20px; /* Add space between the text and the image */
+}
+
+.services-image img {
+    max-width: 50%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
 
 /* Other existing styles remain unchanged */
+p {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font family */
+    font-size: 1.2em; /* Adjust font size as needed */
+    font-weight: bold; /* Change to 'normal' or 'light' if you want a different weight */
+    color: black; /* Set the text color */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
