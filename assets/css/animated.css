@@ -3156,3 +3156,16 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: slideOutUp;
           animation-name: slideOutUp;
 }
+/* Hide logo on mobile */
+@media (max-width: 767px) {
+  .logo {
+    display: none; /* Hide logo on mobile */
+  }
+}
+
+/* Show logo on desktop */
+@media (min-width: 768px) {
+  .logo {
+    display: flex; /* Show logo on desktop */
+  }
+}
