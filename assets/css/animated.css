@@ -3159,7 +3159,6 @@ Copyright (c) 2014 Daniel Eden
 
 /* Custom bullet points with italic text */
 .custom-bullets {
-  list-style-type: disc; /* Use disc bullets */
   padding-left: 5px; /* Add padding to align bullets */
   text-align: left; /* Ensure left alignment */
 
