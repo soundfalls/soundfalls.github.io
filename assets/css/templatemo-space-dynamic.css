@@ -1575,3 +1575,44 @@ responsive
     margin-left: 0px;
   }
 }
+
+/* Your existing CSS styles */
+
+/* General styles for the logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Adjust height as needed */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.logo h4 {
+  margin: 0; /* Remove default margin */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .logo {
+    justify-content: center; /* Center logo and text on mobile */
+  }
+
+  .logo img {
+    height: 40px; /* Optional: Adjust logo height for mobile */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack nav items on smaller screens */
+  }
+
+  .nav li {
+    margin: 5px 0; /* Space between nav items */
+  }
+
+  /* Optionally adjust the header padding */
+  .header-area {
+    padding: 10px 0; /* Reduce padding for mobile */
+  }
+}
