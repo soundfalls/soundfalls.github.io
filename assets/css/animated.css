@@ -3161,11 +3161,14 @@ Copyright (c) 2014 Daniel Eden
 .custom-bullets {
   list-style-type: disc; /* Use disc bullets */
   padding-left: 20px; /* Add padding to align bullets */
+  text-align: left; /* Ensure left alignment */
+
 }
 
 .custom-bullets li {
   font-style: italic; /* Make text italic */
   list-style-type: disc; /* Use disc bullets */
   padding-left: 20px; /* Add padding to align bullets */
+  text-align: left; /* Ensure left alignment */
 
 }
