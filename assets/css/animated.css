@@ -3156,3 +3156,16 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: slideOutUp;
           animation-name: slideOutUp;
 }
+
+/* Custom bullet points with italic text */
+.custom-bullets {
+  list-style-type: disc; /* Use disc bullets */
+  padding-left: 20px; /* Add padding to align bullets */
+}
+
+.custom-bullets li {
+  font-style: italic; /* Make text italic */
+  list-style-type: disc; /* Use disc bullets */
+  padding-left: 20px; /* Add padding to align bullets */
+
+}
