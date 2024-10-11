@@ -1544,80 +1544,47 @@ responsive
     margin: 15px 0px 30px 0px;
   }
 }
-/* General styles for the logo */
-.logo {
-  display: flex;
-  align-items: center;
-}
 
-.logo img {
-  height: 50px; /* Adjust height as needed */
-  margin-right: 10px; /* Space between logo and text */
-}
-
-.logo h4 {
-  margin: 0; /* Remove default margin */
-}
-
-/* Mobile styles */
 @media (max-width: 767px) {
-  /* Adjust logo positioning */
-  .logo {
-    justify-content: flex-start; /* Align logo and text to the left */
-  }
-
-  .logo img {
-    height: 40px; /* Optional: Adjust logo height for mobile */
-  }
-
-  .nav {
-    flex-direction: column; /* Stack nav items on smaller screens */
-    align-items: center; /* Center nav items */
-  }
-
-  .nav li {
-    margin: 5px 0; /* Space between nav items */
-  }
-
-  /* Adjust header area padding for mobile */
-  .header-area {
-    padding: 10px; /* Reduce padding for mobile */
-    text-align: center; /* Center the header text */
-  }
-
-  /* Additional adjustments for other sections if necessary */
   .about-us .left-image {
-    bottom: -280px; /* This may need to be adjusted based on your design */
+    bottom: -280px;
   }
-
   .our-blog .right-list {
     margin-left: 0px;
   }
-
   .our-blog .right-list ul li {
     display: inline-block;
     margin-top: 0px;
     padding-top: 30px;
     border-top: 1px solid #eee;
   }
-
   .our-blog .right-list .left-content {
     margin-right: 0px;
     width: 100%;
     margin-bottom: 15px;
   }
-
   .our-blog .right-list .right-image,
   .our-blog .right-list .right-image img {
     width: 100%;
   }
-
   .phone-info h4 span {
     display: block;
     margin-top: 15px;
   }
-
   .phone-info h4 span i {
     margin-left: 0px;
+  }
+}
+/* Hide logo on mobile */
+@media (max-width: 767px) {
+  .logo {
+    display: none; /* Hide logo on mobile */
+  }
+}
+
+/* Show logo on desktop */
+@media (min-width: 768px) {
+  .logo {
+    display: flex; /* Show logo on desktop */
   }
 }
