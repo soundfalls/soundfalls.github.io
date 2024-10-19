@@ -1,0 +1,15 @@
+.. SoundFalls LLC Publications documentation master file, created by
+   sphinx-quickstart on Sat Oct 19 08:46:02 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+SoundFalls LLC Publications
+===========================
+
+Here is a list of our most recent publications:
+
+- **Publication 1**: In progress...
+
+
+
+For more detailed information, refer to each publication link.

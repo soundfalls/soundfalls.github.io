@@ -1,0 +1,15 @@
+.. SoundFalls LLC Publications documentation master file, created by
+   sphinx-quickstart on Sat Oct 19 08:46:02 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+DAS processing Methods
+===========================
+- **Frequency domain processing methods for DAS data**: Techniques that involve analyzing DAS data in the frequency domain such as FK analysis.
+  
+- **Time domain processing methods for DAS data**: Methods that work directly in the time domain,such as cross correlation and sembelance.
+
+
+In progress...
+
+For more detailed information, refer to each publication link.
