@@ -3170,3 +3170,29 @@ Copyright (c) 2014 Daniel Eden
   text-align: left; /* Ensure left alignment */
 
 }
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.team-member h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team-member p {
+  color: #777;
+}
+
+.team-member .social-links a {
+  color: #555;
+  margin: 0 10px;
+  font-size: 18px;
+}
